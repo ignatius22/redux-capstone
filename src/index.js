@@ -7,14 +7,14 @@ import { createLogger } from 'redux-logger';
 import 'tachyons';
 
 import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
-import { requestRobots, searchRobots } from './reducers';
+
+import { requestRecipes, searchRecipes } from './redux/reducer';
 
 import './index.css';
 
 const logger = createLogger();
 
-const rootReducers = combineReducers({ requestRobots, searchRobots });
+const rootReducers = combineReducers({ requestRecipes, searchRecipes });
 
 const store = createStore(
   rootReducers,
@@ -27,4 +27,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-registerServiceWorker();

@@ -1,38 +1,38 @@
 import {
   CHANGE_SEARCHFIELD,
-  REQUEST_ROBOTS_PENDING,
-  REQUEST_ROBOTS_SUCCESS,
-  REQUEST_ROBOTS_FAILED,
-} from './constants';
+  REQUEST_RECIPES_PENDING,
+  REQUEST_RECIPES_SUCCESS,
+  REQUEST_RECIPES_FAILED,
+} from '../redux/actionTypes';
 
 const initialStateSearch = {
-  searchField: '',
-};
+  searchField: ''
+}
 
-export const searchRobots = (state = initialStateSearch, action = {}) => {
+export const searchRecipes = (state=initialStateSearch, action={}) => {
   switch (action.type) {
     case CHANGE_SEARCHFIELD:
-      return Object.assign({}, state, { searchField: action.payload });
+      return Object.assign({}, state, {searchField: action.payload})
     default:
-      return state;
+      return state
   }
-};
+}
 
-const initialStateRobots = {
-  robots: [],
+const initialStateRecipes = {
+  recipes: [],
   isPending: true,
 };
 
-export const requestRobots = (state = initialStateRobots, action = {}) => {
+export const requestRecipes = (state = initialStateRecipes, action = {}) => {
   switch (action.type) {
-    case REQUEST_ROBOTS_PENDING:
+    case REQUEST_RECIPES_PENDING:
       return Object.assign({}, state, { isPending: true });
-    case REQUEST_ROBOTS_SUCCESS:
+    case REQUEST_RECIPES_SUCCESS:
       return Object.assign({}, state, {
-        robots: action.payload,
+        recipes: action.payload,
         isPending: false,
       });
-    case REQUEST_ROBOTS_FAILED:
+    case REQUEST_RECIPES_FAILED:
       return Object.assign({}, state, { error: action.payload });
     default:
       return state;
