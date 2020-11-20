@@ -2,10 +2,8 @@
 import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import 'jest';
+import ReactDOM from 'react-dom';
 import SearchBox from '../../components/SearchBox';
-import ReactDOM from 'react-dom'
-
-
 
 afterEach(cleanup);
 
@@ -15,16 +13,15 @@ it('* renders *', () => {
 });
 
 it('* renders without crashing *', () => {
-	const div = document.createElement('div')
-	ReactDOM.render(<SearchBox />, div);
-})
+  const div = document.createElement('div');
+  ReactDOM.render(<SearchBox />, div);
+});
 
-describe("input value", () => {
-	it("return update onchange", () => {
-		const { queryByPlaceholderText } = render(<SearchBox  />)
-		const searchInput = queryByPlaceholderText('search chicken');
-		fireEvent.change(searchInput, { target: { value: "test" } })
-		expect(searchInput.value).toBe("test")
-		
-	})
-})
+describe('input value', () => {
+  it('return update onchange', () => {
+    const { queryByPlaceholderText } = render(<SearchBox />);
+    const searchInput = queryByPlaceholderText('search chicken');
+    fireEvent.change(searchInput, { target: { value: 'test' } });
+    expect(searchInput.value).toBe('test');
+  });
+});

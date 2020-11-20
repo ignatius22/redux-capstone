@@ -18,12 +18,12 @@ const rootReducers = combineReducers({ requestRecipes, searchRecipes });
 
 const store = createStore(
   rootReducers,
-  applyMiddleware(thunkMiddleware, logger)
+  applyMiddleware(thunkMiddleware, logger),
 );
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
