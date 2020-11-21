@@ -4,7 +4,7 @@ Capstone projects are solo projects at the end of the each of the Microverse Mai
 
 ## Live demo
 
-[live demo](https://jovial-bell-2d2a8d.netlify.app/)
+[live demo](https://chicken-app.netlify.app/)
 
 - Screenshot
 ![alt text](./src/img/homepage.png)
@@ -56,7 +56,7 @@ Capstone projects are solo projects at the end of the each of the Microverse Mai
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the <a href="https://github.com/ignatius22/Weather-app.git/issues" target="_blank">issues page</a>.
+Feel free to check the <a href="https://github.com/ignatius22/redux-capstone/issues" target="_blank">issues page</a>.
 
 ## Show your support
 
