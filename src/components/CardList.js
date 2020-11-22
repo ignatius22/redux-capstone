@@ -17,11 +17,11 @@ const CardList = ({ recipes }) => (
 );
 
 CardList.propTypes = {
-  recipes: PropTypes.string.isRequired,
+  recipes: PropTypes.string,
 };
 
 CardList.propTypes = {
-  recipes: PropTypes.instanceOf(Array).isRequired,
+  recipes: PropTypes.instanceOf(Array),
 };
 
 export default CardList;
