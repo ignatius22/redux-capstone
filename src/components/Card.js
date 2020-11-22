@@ -12,9 +12,9 @@ const Card = ({ title, image, calories }) => (
 );
 
 Card.propTypes = {
-  title: PropTypes.string,
-  image: PropTypes.string,
-  calories: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  calories: PropTypes.string.isRequired,
 };
 
 export default Card;
