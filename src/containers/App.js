@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { setSearchField, requestRecipes } from '../redux/action';
 
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
-// import ErrorBoundry from '../components/ErrorBoundry';
 
 import './App.css';
+import Detailed from '../components/Detailed';
 
 const mapStateToProps = state => ({
   searchField: state.searchRecipes.searchField,
@@ -36,26 +38,32 @@ const App = ({
   }, []);
 
   return (
-    <div className="tc">
-      <h1 className="f1">BITE RITE</h1>
-      <SearchBox searchChange={onSearchChange} />
-
-      {isPending ? (
-        <h1>Loading</h1>
-      ) : (
-
-        <CardList recipes={filteredRecipes} />
-
-      )}
-    </div>
+    <Router>
+      <div className="tc">
+        <h1 className="f1">Munch It</h1>
+        <Route exact path="/">
+          <div>
+            <SearchBox searchChange={onSearchChange} />
+            {isPending ? (
+              <h1>Loading</h1>
+            ) : (
+              <CardList recipes={filteredRecipes} />
+            )}
+          </div>
+        </Route>
+        <Switch>
+          <Route path="/:detailId" component={Detailed} />
+        </Switch>
+      </div>
+    </Router>
   );
 };
 
 App.propTypes = {
   onSearchChange: PropTypes.func.isRequired,
   recipes: PropTypes.instanceOf(Array).isRequired,
-  isPending: PropTypes.func.isRequired,
-  searchField: PropTypes.func.isRequired,
+  isPending: PropTypes.string.isRequired,
+  searchField: PropTypes.string.isRequired,
   onRequestRecipes: PropTypes.func.isRequired,
 };
 

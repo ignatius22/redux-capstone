@@ -4,11 +4,12 @@ import uuid from 'react-uuid';
 import Card from './Card';
 
 const CardList = ({ recipes }) => (
+
   <div>
-    {recipes.map(recipe => (
+    {recipes.map((recipe, i) => (
       <Card
         key={uuid()}
-        calories={recipe.recipe.calories}
+        id={i}
         title={recipe.recipe.label}
         image={recipe.recipe.image}
       />
