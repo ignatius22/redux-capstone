@@ -62,7 +62,7 @@ const App = ({
 App.propTypes = {
   onSearchChange: PropTypes.func.isRequired,
   recipes: PropTypes.instanceOf(Array).isRequired,
-  isPending: PropTypes.string.isRequired,
+  isPending: PropTypes.bool.isRequired,
   searchField: PropTypes.string.isRequired,
   onRequestRecipes: PropTypes.func.isRequired,
 };
