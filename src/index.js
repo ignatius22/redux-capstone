@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
-import { createLogger } from 'redux-logger';
 
 import 'tachyons';
 
@@ -13,13 +12,11 @@ import { requestRecipes, searchRecipes } from './redux/reducer';
 
 import './index.css';
 
-const logger = createLogger();
-
 const rootReducers = combineReducers({ requestRecipes, searchRecipes });
 
 const store = createStore(
   rootReducers,
-  applyMiddleware(thunkMiddleware, logger),
+  applyMiddleware(thunkMiddleware),
 );
 
 ReactDOM.render(
