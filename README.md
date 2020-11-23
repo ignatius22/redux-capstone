@@ -27,24 +27,24 @@ Capstone projects are solo projects at the end of the each of the Microverse Mai
 
 ## Getting Started 
 
-	To get a local copy up and running follow these simple example steps.
+- To get a local copy up and running follow these simple example steps.
 
 ## Prerequisites
 
-		Node
-		Javascript
-		React
-		Redux
-    npm
-		Editor of your choice
+ - Node
+ - Javascript
+ - React
+ - Redux
+ - npm
+ - Editor of your choice
 		
 
 ## Setup
 
-	Clone the repository.
-	Run npm install to install dependencies.
-	Run npm start to start the development server.
-	Your browser should open. Click on the dist folder to see the app.
+- Clone the repository.
+-	Run npm install to install dependencies.
+-	Run npm start to start the development server.
+-	Your browser should open. Click on the dist folder to see the app.
 
 
 
