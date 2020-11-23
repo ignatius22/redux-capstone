@@ -4,10 +4,12 @@ Capstone projects are solo projects at the end of the each of the Microverse Mai
 
 ## Live demo
 
-[live demo](https://chicken-app.netlify.app/)
+[live demo](https://munch-it.netlify.app/)
 
 - Screenshot
 ![alt text](./src/img/homepage.png)
+
+![alt text](./src/img/single.png)
 
 
 
