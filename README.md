@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Redux Capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Capstone projects are solo projects at the end of the each of the Microverse Main Technical Curriculum sections. It is a real-world-like project built with business specifications This project was at the end of the React and Redux curriculum section. For this project, I created an app that allows you to make call to a public api and fetch list of chichen. The use of redux was implemented to manage state and and connect the store with the component using the provider method from the redux.
 
-## Available Scripts
+## Live demo
 
-In the project directory, you can run:
+[live demo](https://munch-it-pro.netlify.app/1)
 
-### `yarn start`
+## ScreenShot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Homepage
+![alt text](./src/img/Home.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Detail Page
+![alt text](./src/img/Single.png)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Redux
+- Jest
+- Tachyons
+- The Edamame API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started 
 
-### `yarn eject`
+- To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Node
+ - Javascript
+ - React
+ - Redux
+ - npm
+ - Editor of your choice
+		
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Clone the repository.
+-	Run npm install to install dependencies.
+-	Run npm start to start the development server.
+-	Your browser should open. Click on the dist folder to see the app.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤 **Ignatius Sani**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github: [ignatius22](https://github.com/ignatius22)
+- Twitter: [@Iggy_code](https://twitter.com/iggy_code)
+- Linkedin: [linkedin](https://www.linkedin.com/in/ignatiussani)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the <a href="https://github.com/ignatius22/redux-capstone/issues" target="_blank">issues page</a>.
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+ 
+- <a href="https://www.microverse.org/" target="_blank">Microverse</a>

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="pa2"
+>
+  <input
+    className="pa3 ba b--green bg-lightest-blue"
+    data-testid="input"
+    onChange={[Function]}
+    placeholder="search your chicken"
+    type="search"
+  />
+</div>
+`;
