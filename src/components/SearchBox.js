@@ -14,7 +14,11 @@ const SearchBox = ({ searchChange }) => (
 );
 
 SearchBox.propTypes = {
-  searchChange: PropTypes.func.isRequired,
+  searchChange: PropTypes.func,
+};
+
+SearchBox.defaultProps = {
+  searchChange: () => {},
 };
 
 export default SearchBox;

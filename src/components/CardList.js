@@ -5,7 +5,7 @@ import Card from './Card';
 
 const CardList = ({ recipes }) => (
 
-  <div>
+  <div data-testid="recipes">
     {recipes.map((recipe, i) => (
       <Card
         key={uuid()}
@@ -18,11 +18,10 @@ const CardList = ({ recipes }) => (
 );
 
 CardList.propTypes = {
-  recipes: PropTypes.string.isRequired,
+  recipes: PropTypes.instanceOf(Array),
 };
-
-CardList.propTypes = {
-  recipes: PropTypes.instanceOf(Array).isRequired,
+CardList.defaultProps = {
+  recipes: [],
 };
 
 export default CardList;

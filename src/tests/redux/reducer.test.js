@@ -14,19 +14,19 @@ describe('todos reducer', () => {
     };
     expect(searchRecipes({}, startAction)).toEqual({});
   });
-	
-	  it('should handle REQUEST_RECIPES_SUCCESS', () => {
-      const successAction = {
-        recipes: [],
-        isPending: true,
-      };
-      expect(requestRecipes({}, successAction)).toEqual({});
-		});
-	
-	  it('should handle REQUEST_RECIPES_FAILED', () => {
-      const failAction = {
-        type: types.REQUEST_RECIPES_FAILED,
-      };
-      expect(requestRecipes({}, failAction)).toEqual({});
-    });
+
+  it('should handle REQUEST_RECIPES_SUCCESS', () => {
+    const successAction = {
+      recipes: [],
+      isPending: true,
+    };
+    expect(requestRecipes({}, successAction)).toEqual({});
+  });
+
+  it('should handle REQUEST_RECIPES_FAILED', () => {
+    const failAction = {
+      type: types.REQUEST_RECIPES_FAILED,
+    };
+    expect(requestRecipes({}, failAction)).toEqual({});
+  });
 });
