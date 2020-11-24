@@ -37,12 +37,12 @@ const Detailed = ({
       <div>
         <Link
           to="/"
-          className="mb5 f6 link dim br1 ph3 pv2  dib white bg-black"
+          className="mb5 f6 link dim br1 ph3 pv2  dib near-black bg-gold shadow-3"
         >
           Go back to Munch It
         </Link>
       </div>
-      <div className="dt mw7 center pv4 pv5-m pv6-ns shadow-3 pa3 bg-light-yellow black mb5">
+      <div className="dt mw7 center pv4 pv5-m pv6-ns shadow-3 pa3 bg-navy mb5">
         <div className="dtc v-top">
           <img src={image} alt="recipe" className="mw5 db bg-navy br3" />
         </div>
